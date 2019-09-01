@@ -134,6 +134,173 @@ body {
   z-index: 1;
 }
 
+
+/*Radionice*/
+
+/*POCETAK SESTOUGAO IKONICE ZA RADIONICE*/
+.radionice_prvi_red {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.radionica_ikona {
+  height: 50px;
+  width: 100px; 
+}
+
+.radionica {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:transparent;
+  text-decoration: none;
+  border: 2px solid transparent;
+  text-align: center;
+  line-height: 50px;
+  transition: .5s;
+}
+
+.radionica:before {
+  content: '';
+  width:  100%;
+  height: 100%;
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  border: 3px solid transparent;
+  transform: rotate(0deg);
+  transition: .5s;
+}
+
+.radionica:after
+ {
+  content: '';
+  width:  100%;
+  height: 100%;
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  border: 3px solid transparent;
+  transform: rotate(0deg);
+  transition: .5s;
+}
+
+/*KRAJ SESTOUGAO IKONICE ZA RADIONICE*/
+
+/*POCETAK KARTICE ZA RADIONICE*/
+
+.slika {
+  height: 60px;
+  width: 60px;
+}
+
+.radionice_drugi_red {
+  position: relative;
+  height: 350px;
+  margin: 50px auto;
+}
+
+.radionice_drugi_red 
+.box {
+  position: relative;
+  background: #f99c1c;
+
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.radionice_drugi_red 
+.box,
+.radionica_ikona_2 {
+  position: absolute;
+  margin-top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: seagreen;
+  transition: 0.5s;
+  z-index: 1;
+
+}
+
+.radionice_drugi_red 
+.box:hover
+.radionica_ikona_2 {
+  top: 30px;
+  left: 95px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.radionice_drugi_red 
+.box
+.slika {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 60px;
+  width: 60px;
+  transition: 0.5s;
+ } 
+
+.radionice_drugi_red 
+.box:hover
+.radionica{
+  border: 3px solid rgb(18, 88, 48);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.radionice_drugi_red 
+.box:hover
+.radionica:before{
+  transform: rotate(120deg);
+  border: 3px solid rgb(18, 88, 48);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.radionice_drugi_red 
+.box:hover
+.radionica:after{
+  transform: rotate(-120deg);
+  border: 3px solid rgb(18, 88, 48);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.radionice_drugi_red 
+.box:hover
+.slika {
+  height: 60px;
+  width: 60px;
+} 
+
+.radionice_drugi_red
+.box
+.tekst {
+  position: absolute;
+  height: 250px;
+  top:100%;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.radionice_drugi_red
+.box:hover
+.tekst {
+  top:120px;
+  opacity: 1;
+}
+/*KRAJ KARTICE ZA RADIONICE*/
+
 /* MENI ZA TELEFON */
 input label {
   position: fixed;
